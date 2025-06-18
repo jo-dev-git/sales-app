@@ -3,7 +3,6 @@ package com.jo.salesapp;
 import lombok.Builder;
 import lombok.NonNull;
 import model.Product;
-import model.ProductCategory;
 
 @Builder
 public class TaxCalculator {

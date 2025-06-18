@@ -9,9 +9,7 @@ import model.Product;
 public class Main {
 
 	public static void main(String[] args) {
-		final SalesApplication app = SalesApplication.builder()
-				.formatter(ReceiptFormatter.builder().build())
-				.build();
+		final SalesApplication app = SalesApplication.builder().build();
 		
 		final Datas datas = Datas.builder().build();
        
