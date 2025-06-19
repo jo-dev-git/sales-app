@@ -1,15 +1,17 @@
-package com.jo.salesapp;
+package com.jo.salesapp.controller;
 
 import java.util.List;
 
+import com.jo.salesapp.model.Product;
+import com.jo.salesapp.model.Receipt;
+import com.jo.salesapp.model.ShoppingBasket;
+import com.jo.salesapp.view.ReceiptFormatter;
+
 import lombok.Builder;
 import lombok.NonNull;
-import model.Product;
-import model.Receipt;
-import model.ShoppingBasket;
 
 @Builder
-public class SalesApplication {
+public class SalesController {
 	
     private final ReceiptFormatter formatter = ReceiptFormatter.builder().build();
     

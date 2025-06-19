@@ -2,14 +2,16 @@ package com.jo.salesapp;
 
 import java.util.List;
 
+import com.jo.salesapp.controller.SalesController;
+import com.jo.salesapp.model.Product;
+
 import data.Datas;
 import lombok.NonNull;
-import model.Product;
 
 public class Main {
 
 	public static void main(String[] args) {
-		final SalesApplication app = SalesApplication.builder().build();
+		final SalesController app = SalesController.builder().build();
 		
 		final Datas datas = Datas.builder().build();
        
@@ -18,7 +20,7 @@ public class Main {
 		displayResultConsole(app, datas.getThirdBasket());
   	}
 	
-	private static void displayResultConsole(@NonNull final SalesApplication app, @NonNull final List<Product> products) {
+	private static void displayResultConsole(@NonNull final SalesController app, @NonNull final List<Product> products) {
 		String result = app.processBasket(products);
         System.out.println("\nReceipt:\n" + result);
 	}

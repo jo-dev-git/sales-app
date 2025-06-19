@@ -1,11 +1,12 @@
-package com.jo.salesapp;
+package com.jo.salesapp.view;
 
 import java.text.DecimalFormat;
 
+import com.jo.salesapp.model.Receipt;
+import com.jo.salesapp.model.ReceiptItem;
+
 import lombok.Builder;
 import lombok.NonNull;
-import model.Receipt;
-import model.ReceiptItem;
 
 @Builder
 public class ReceiptFormatter {
@@ -25,7 +26,8 @@ public class ReceiptFormatter {
         }
         
         //TOTAL TAX AND COST
-        stringBuilder.append("Sales Taxes: ")
+        stringBuilder
+          .append("Sales Taxes: ")
           .append(df.format(receipt.getTotalTax()))
           .append(" Total: ")
           .append(df.format(receipt.getTotalCost()));

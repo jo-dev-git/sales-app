@@ -1,8 +1,9 @@
 package com.jo.salesapp;
 
+import com.jo.salesapp.model.Product;
+
 import lombok.Builder;
 import lombok.NonNull;
-import model.Product;
 
 @Builder
 public class TaxCalculator {

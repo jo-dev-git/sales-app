@@ -3,9 +3,10 @@ package data;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.jo.salesapp.model.Product;
+import com.jo.salesapp.model.ProductCategory;
+
 import lombok.Builder;
-import model.Product;
-import model.ProductCategory;
 
 
 //Can use Factory, objects input, String...

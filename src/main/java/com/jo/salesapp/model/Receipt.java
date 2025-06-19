@@ -1,4 +1,4 @@
-package model;
+package com.jo.salesapp.model;
 
 import java.util.List;
 
