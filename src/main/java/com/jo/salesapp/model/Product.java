@@ -23,7 +23,7 @@ public class Product {
 	
 	@NonNull
 	@Builder.Default
-	ProductCategory category = ProductCategory.DEFAULT;
+	ProductCategory category = ProductCategory.OTHER;
 	
 	public double getTotalPrice() {
 		return price * quantity;
@@ -42,10 +42,10 @@ public class Product {
 	}
 	
     public boolean isTaxed() {
-        return category == ProductCategory.DEFAULT;
+        return category == ProductCategory.OTHER;
     }
 	
-   public String format(double value) {
+   public String format(final double value) {
         if(value == (long)value) 
              return String.format("%d", (long) value);
         else

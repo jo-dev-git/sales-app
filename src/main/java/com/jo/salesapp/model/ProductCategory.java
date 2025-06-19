@@ -1,5 +1,5 @@
 package com.jo.salesapp.model;
 
 public enum ProductCategory {
-	BOOK, FOOD, MEDICAL, DEFAULT
+	BOOK, FOOD, MEDICAL, OTHER
 }

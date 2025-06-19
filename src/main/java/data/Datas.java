@@ -26,7 +26,7 @@ public class Datas {
 		
 		products.add(Product.builder()
 				.isImported(false)
-				.category(ProductCategory.DEFAULT)
+				.category(ProductCategory.OTHER)
 				.name("music CD")
 				.quantity(1d)
 				.price(14.99d)
@@ -55,7 +55,7 @@ public class Datas {
 		
 		products.add(Product.builder()
 				.isImported(true)
-				.category(ProductCategory.DEFAULT)
+				.category(ProductCategory.OTHER)
 				.name("bottle of perfume")
 				.quantity(1d)
 				.price(47.50d)
@@ -68,7 +68,7 @@ public class Datas {
 		final List<Product> products = new ArrayList<>();
 		products.add(Product.builder()
 				.isImported(true)
-				.category(ProductCategory.DEFAULT)
+				.category(ProductCategory.OTHER)
 				.name("bottle of perfume")
 				.quantity(1d)
 				.price(27.99d)
@@ -76,7 +76,7 @@ public class Datas {
 		
 		products.add(Product.builder()
 				.isImported(false)
-				.category(ProductCategory.DEFAULT)
+				.category(ProductCategory.OTHER)
 				.name("bottle of perfume")
 				.quantity(1d)
 				.price(18.99d)

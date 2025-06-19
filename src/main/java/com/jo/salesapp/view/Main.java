@@ -1,4 +1,4 @@
-package com.jo.salesapp;
+package com.jo.salesapp.view;
 
 import java.util.List;
 
